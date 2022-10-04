@@ -1,0 +1,167 @@
+@import url(reset.css);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background: rgba(250, 221, 92, 0.993);
+  height: 100vh;
+  
+}
+
+.calculator {
+
+  text-align: center;
+  text-transform: uppercase;
+  width: 380px;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: .2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.37);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border-radius: 16px;
+}
+
+.calculator h1 {
+  color: rgb(22, 20, 20);
+}
+
+/*DISPLAY*/
+.calculator-display {
+  text-align: right;
+  margin-top: 1rem;
+  padding: 1rem 1rem 0.2rem;
+  font-weight: 500;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.452);
+  /* border: 2px solid rgb(22, 20, 20); */
+  border-radius: 3px;
+}
+
+#previous-operation {
+  color: #777;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+}
+
+#current-operation {
+  min-height: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+/*CALCULATOR BUTTONS*/
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  margin-top: 1rem;
+  /* border: 2px solid rgb(22, 20, 20);  */
+  border-radius: 3px;
+  gap: 5px;
+}
+
+.calculator-keys button {
+  background: #ffffff;
+  /* border: #5e5e5e 1px solid;   */
+  border-style: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.calculator-keys button:hover {
+  background: #b4b1b1;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+.calculator-keys .key-operator{
+  grid-column: 4;
+  background: rgb(230, 229, 229);
+  transition: 1s;
+}
+
+.calculator-keys .key-operators {
+  background: rgb(230, 229, 229);
+}
+
+.number-one {
+  grid-column: 1;
+  grid-row: 2;
+}
+.number-two {
+  grid-column: 2;
+  grid-row: 2;
+}
+.number-three {
+  grid-column: 3;
+  grid-row: 2;
+}
+.number-four {
+  grid-column: 1;
+  grid-row: 3;
+}
+.number-five {
+  grid-column: 2;
+  grid-row: 3;
+}
+.number-six {
+  grid-column: 3;
+  grid-row: 3;
+}
+.number-seven {
+  grid-column: 1;
+  grid-row: 4;
+}
+.number-eight {
+  grid-column: 2;
+  grid-row: 4;
+}
+.number-nine {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+
+
+
+.is-depressed {
+  color: rgb(103, 107, 106);
+  box-shadow: inset 0px 0px 30px;
+  
+}
+
+
+
+#total {
+  grid-row-start: 5;
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  
+  background: rgb(236, 150, 113);
+}
+#total:hover {
+  background: rgb(240, 113, 58);
+}
+
+
+

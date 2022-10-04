@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="flex-box container">
+
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <div class="calculator-display">
+        <div id="previous-operation"></div>
+        <div id="current-operation"></div>
+      </div>
+      <div class="calculator-keys">
+        <button class="key-operators" data-action="clear-all">CE</button>
+        <button class="key-operators" data-action="clear">C</button>
+        <button class="key-operators" data-action="delete">DEL</button>
+        <button class="key-operator" data-action="add">+</button>
+        <button class="key-operator" data-action="subtract">-</button>
+        <button class="key-operator" data-action="multiply">*</button>
+        <button class="key-operator" data-action="divide">/</button>
+        <button id="total" data-action="calculate">=</button>
+        <button class="number-one">1</button>
+        <button class="number-two">2</button>
+        <button class="number-three">3</button>
+        <button class="number-four">4</button>
+        <button class="number-five">5</button>
+        <button class="number-six">6</button>
+        <button class="number-seven">7</button>
+        <button class="number-eight">8</button>
+        <button class="number-nine">9</button>
+        <button class="number">0</button>
+        <button class="number" data-action="decimal">.</button>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
